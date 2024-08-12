@@ -1,11 +1,17 @@
 ## About The Project
 
+This project is a student record management system that allows users to view, add, remove, and back up student data stored in a binary file, providing a menu-driven interface to perform these operations.
+
 ## Getting Started
-* chmod
+
+### Executing program
+* grant permission
   ```sh
-  chmod +x build.sh
+  chmod u+x build.sh
   ```
-* sh
+* run program
   ```sh
   ./build.sh
   ```
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details

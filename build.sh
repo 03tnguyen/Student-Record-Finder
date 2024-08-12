@@ -1,21 +1,32 @@
 #!/bin/bash
-# Remove unnecessary files
-rm *.o
 
-# Grant permission
-chmod u+x r.sh
+# Remove unnecessary object files
+echo "Removing object files..."
+rm -f *.o
 
-# Complier check on student.h
-gcc -c student.h
+# Grant execute permissions to the build script
+echo "Granting execute permissions to build.sh..."
+chmod u+x build.sh
 
-# Compile and run readFile.c to create a binary file from the text file
-echo "The binary file is created."
-gcc -o create convertRoster.c
-./create
+# Check for the existence of header file before compiling
+if [ -f student.h ]; then
+    echo "Compiling student.h..."
+    gcc -c student.h
+else
+    echo "Error: student.h not found."
+    exit 1
+fi
+
+# Compile and run convertRoster.c to create the binary file
+echo "Compiling convertRoster.c..."
+gcc -o convert convertRoster.c
+echo "Running convert to create the binary file..."
+./convert
 
 # Compile and run menu.c to create the menu interface
-echo -e "Run the program \"Final semester test\"\n"
+echo "Compiling main.c to create the menu interface..."
 gcc -o main main.c 
-./menu
+echo -e "Running main to display the menu...\n"
+./main
 
-echo "The bash file has terminated."
+echo "Script execution completed successfully."

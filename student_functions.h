@@ -247,3 +247,4 @@ void removeStudentData()
         printf("Student not found.\n");
         fclose(file);
     }
+}
