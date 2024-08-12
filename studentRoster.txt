@@ -1,0 +1,53 @@
+Alice Smith
+6321
+Psychology
+Senior
+92855
+
+John Doe
+1289
+Biology
+Freshman
+92626
+
+Emily Brown
+5734
+English
+Junior
+90210
+
+Michael Johnson
+9762
+Computer Science
+Sophomore
+90024
+
+Sarah Davis
+4012
+History
+Freshman
+92677
+
+David Wilson
+8423
+Mathematics
+Senior
+92801
+
+Jessica Garcia
+2956
+Physics
+Sophomore
+90007
+
+Samantha Taylor
+5892
+Economics
+Senior
+92612
+
+Daniel Hernandez
+1843
+Political Science
+Freshman
+90032
